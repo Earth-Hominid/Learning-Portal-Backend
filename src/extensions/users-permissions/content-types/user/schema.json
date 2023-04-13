@@ -63,18 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "user"
-    },
-    "pt_br_merchandisings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::pt-br-merchandise.pt-br-merchandise",
-      "mappedBy": "users_permissions_user"
-    },
     "portugueses": {
       "type": "relation",
       "relation": "oneToMany",
