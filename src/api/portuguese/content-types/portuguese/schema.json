@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portugueses",
+  "info": {
+    "singularName": "portuguese",
+    "pluralName": "portugueses",
+    "displayName": "pt-br",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "article": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "categoryLink": {
+      "type": "string"
+    },
+    "headingLink": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "portugueses"
+    },
+    "listHeading": {
+      "type": "string"
+    },
+    "listItemOne": {
+      "type": "string"
+    },
+    "listItemTwo": {
+      "type": "string"
+    },
+    "listItemThree": {
+      "type": "string"
+    },
+    "listItemFour": {
+      "type": "string"
+    },
+    "listItemFive": {
+      "type": "string"
+    },
+    "listItemSix": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "main": {
+      "type": "string"
+    }
+  }
+}
